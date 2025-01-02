@@ -1,0 +1,33 @@
+const min=1;
+const max=100;
+//thats how we take a code for taking a random number in java script
+const answer=(Math.random()*(max - min + 1))+min;
+let attempt=0;
+let guess;
+let running =true;
+while(running){
+    guess=window.prompt(`guess the number between ${min} - ${max} `)
+    guess=Number(guess);
+    if(isNaN(guess)){
+        window.alert("please enter a valid number");
+    }    
+    else if(guess<min || guess>max){
+        window.alert("please enter a Valid number");
+    }
+    else{
+        attempt++;
+        if(guess<answer){
+            window.alert("the guess is small");
+        }
+        else if(guess>answer){
+           window. alert("the guess is high");
+
+        }
+        else{
+            window.alert("the answer is correct");
+            running= false;
+        }
+        
+    }
+   
+}
