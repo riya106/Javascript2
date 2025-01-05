@@ -1,0 +1,30 @@
+
+let user=prompt("enter S,W,G")
+let cpu1=Math.floor(Math.random()*3);//it is used to create a random no which we will use as a random Snake Water Gun
+let cpu=["S","W","G"][cpu1]
+//creating a function
+const match=(cpu,user)=>{
+    if(cpu==user){
+        return "Nobody";
+    }else if(cpu=="S" && user=="W"){
+        return "cpu";
+    }
+    else if(cpu=="S" && user=="G"){
+        return "user";
+    }
+    else if(cpu=="W" && user=="G"){
+        return "user";
+    }
+    else if(cpu=="W" && user=="S"){
+        return "cpu"
+    }
+    
+    else if(cpu=="G" && user=="S"){
+        return "cpu";
+    }
+    else if(cpu=="G" && user=="W"){
+        return "user";
+    }
+}
+let result=match(cpu,user)
+document.write(`CPU and USER : <br>The winner is: ${result}`)//we take as br bcz it is html code
