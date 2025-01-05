@@ -1,0 +1,28 @@
+//practice for the problems 
+//to check the age if it is valid for the drive or not
+
+let age=prompt("enter your age")
+age=Number.parseInt(age);
+let runtime=true;
+while(runtime){
+    if(age<0){
+        console.error
+            ("please eneter a valid age")
+    }
+if(age>18){
+    alert("you can drive");
+}else{
+    alert("you cannot drive");
+}
+runtime=confirm("Do you want to play again");
+}
+//another problem
+//if the enetered no is greater then 4
+let num=prompt("enter a number")
+num=Number.parseInt(num);
+if(num>4){
+    location.href="https://google.com"
+}
+//changing the color of the background
+let color=prompt("enter the page background color")
+document.body.style.background=color;
