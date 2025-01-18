@@ -1,0 +1,20 @@
+//how to add java script file to the html file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello</h1><!--in the line javascript-->
+    <!--this is within using a java script code <script type="text/javascript">
+        alert("Hello");
+    </script>-->
+    <!--adding a java script file here like this -->
+    <script src="index.js" charset="UTF-8">
+
+    </script>
+</body>
+</html>
