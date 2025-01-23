@@ -1,0 +1,27 @@
+//how to create a object:
+var housekeeper1={
+    yearsofex:12,
+    name:"jane",
+    cleanig:["bathroom","lobby","bedroom"]}
+//output
+housekeeper1
+{yearsofex: 12, name: 'jane', cleanig: Array(3)}
+***
+console.log(housekeeper1.name);
+//output
+VM589:1 jane
+
+//constructor function= function having a capatilized name
+//through this function it became easy for us to create a list of various worker list  
+function BellBoy(name,age,hasworkpermit,lang){
+    this.name=name;
+    this.age=age;
+    this.hasworkpermit=hasworkpermit;
+    this.lang=lang;}
+
+
+   
+
+var bellBoy1=new BellBoy("Jane",21,true,["Hindi","English"]);
+
+var bellboy2=new BellBoy("timmy",31,true,["hindi","english"]);
